@@ -8,11 +8,16 @@ namespace HundirLaFlota
     {
         static void Main(string[] args)
         {
+            int tableroTamano = 15;
+            int numBarcos = 6;
+
             InstanciarPartidaServicio partidaServicio = new InstanciarPartidaServicio();
-            Tablero tablero = partidaServicio.GenerarTablero(20, 6);
+            Tablero tablero = partidaServicio.GenerarTablero(tableroTamano, numBarcos);
 
             tablero.DibujarTablero();
 
+            AtaqueServicio ataque = new AtaqueServicio(tablero);
+            ataque.Atacar();
         }
     }
 }

@@ -70,17 +70,13 @@ namespace HundirLaFlota.Servicios
 
         private bool FueraDeLosLimites(int x, int y, SizeBarco sizeBarco, int tablerosize)
         {
-
             return Limite(x) || Limite(y);
 
             bool Limite(int posicion)
             {
                 return posicion + (int)sizeBarco >= tablerosize;
             }
-
         }
 
-
     }
-
 }

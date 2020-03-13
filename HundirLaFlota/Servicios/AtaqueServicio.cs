@@ -1,4 +1,6 @@
 ﻿using HundirLaFlota.DTOs;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace HundirLaFlota.Servicios
 {
@@ -6,11 +8,14 @@ namespace HundirLaFlota.Servicios
     {
 
         private readonly Tablero _tablero;
-        
+        private List<(int, bool)> barcosHundidos { get; set; }
+        private int[,] PosicionesAtacadas { get; set; }
 
         public AtaqueServicio(Tablero tablero)
         {
             _tablero = tablero;
+            PosicionesAtacadas = new int[_tablero.Anchura, _tablero.Altura];
+
         }
 
         /// <summary>
@@ -18,7 +23,7 @@ namespace HundirLaFlota.Servicios
         /// </summary>
         public void Atacar()
         {
-
+            var test = true;   
         }
     }
 }

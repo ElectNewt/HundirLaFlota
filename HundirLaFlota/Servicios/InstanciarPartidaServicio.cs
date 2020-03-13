@@ -19,9 +19,5 @@ namespace HundirLaFlota.Servicios
             List<Barco> barcos = _barcoServicio.GenerarBarcos(tableroSize, numeroBarcos);
             return new Tablero(tableroSize, barcos);
         }
-
-
-        
     }
-
 }

@@ -13,7 +13,6 @@ Tiene  un array de dos dimensiones de 15 x 15 y de ahi tiene 6 barcos.
 - y unos de 2 de largo
 
 todos son de uno de ancho 
-- Los barcos no pueden estar pegados
 - los Barcos pueden estar tanto en Posiciones horizontales como verticales, no en diagonal. 
 
 Tiene que encontrar el algorithmo que más rápido encuentra todos los barcos.
