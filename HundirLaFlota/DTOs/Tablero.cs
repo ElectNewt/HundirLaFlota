@@ -52,9 +52,9 @@ namespace HundirLaFlota.DTOs
     {
         public static void DibujarTablero(this Tablero tablero)
         {
-            for (int y = 0; y < tablero.Altura; y++)
+            for (int x = 0; x < tablero.Anchura; x++)
             {
-                for (int x = 0; x < tablero.Anchura; x++)
+                for (int y = 0; y < tablero.Altura; y++)
                 {
                     CambiarColor(tablero.Mapa[x, y]);
 

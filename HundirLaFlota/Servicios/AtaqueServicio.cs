@@ -23,7 +23,7 @@ namespace HundirLaFlota.Servicios
         /// </summary>
         public void Atacar()
         {
-            var test = true;   
+           
         }
     }
 }
